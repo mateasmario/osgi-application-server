@@ -1,0 +1,5 @@
+package com.docsbymario.repository;
+
+public interface Repository {
+	String getById(String id);
+}

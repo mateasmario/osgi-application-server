@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.docsbymario.blacklist.provider.IPBlacklist">
+  <service>
+    <provide interface="com.docsbymario.blacklist.Blacklist"/>
+  </service>
+  <implementation class="com.docsbymario.blacklist.provider.IPBlacklist"/>
+</scr:component>

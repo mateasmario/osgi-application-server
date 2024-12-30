@@ -1,0 +1,6 @@
+Bundle-Name: Server
+Bundle-SymbolicName: com.docsbymario.server
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+-runee: JavaSE-17 
+Bundle-ActivationPolicy: 

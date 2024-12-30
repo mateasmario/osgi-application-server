@@ -1,0 +1,27 @@
+package com.docsbymario.repository.provider;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.docsbymario.repository.Repository;
+
+public class InMemoryRepository implements Repository {
+	private Map<String, String> items = new HashMap<>();
+
+	@Override
+	public String getById(String id) {
+		return items.get(id);
+	}
+
+	@Override
+	public boolean insert(String id, String value) {
+		if (items.get(id) != null) {
+			return false;
+		}
+		else {
+			items.put(id, value);
+			return true;
+		}
+	}
+
+}

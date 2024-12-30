@@ -1,0 +1,9 @@
+package com.docsbymario.repository.provider;
+
+import java.util.Map;
+
+public class InMemoryRepository implements Repository {
+	private Map<String, String> items;
+	String getById(String id);
+	boolean insert(String id, String value);
+}

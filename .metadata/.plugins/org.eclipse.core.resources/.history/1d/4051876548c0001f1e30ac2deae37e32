@@ -1,0 +1,16 @@
+package com.docsbymario.server;
+
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+
+@Component(
+    property= {
+        "osgi.command.scope::String=docsbymario",
+        "osgi.command.function:String=disallow"
+    },
+    service=Server.class
+)
+public class Server {
+	@Reference
+	private 
+}

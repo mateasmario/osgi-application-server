@@ -1,0 +1,22 @@
+package com.docsbymario.cache.provider;
+
+import java.util.Map;
+
+import com.docsbymario.cache.Cache;
+
+public class InMemoryCache implements Cache {
+	private Map<String, String> data;
+
+	@Override
+	public String getData(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void putData(String id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

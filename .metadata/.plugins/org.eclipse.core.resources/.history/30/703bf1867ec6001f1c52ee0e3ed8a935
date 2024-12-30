@@ -1,0 +1,7 @@
+package com.docsbymario.blacklist;
+
+import com.docsbymario.request.Request;
+
+public interface Blacklist {
+	boolean disallow(Request request);
+}

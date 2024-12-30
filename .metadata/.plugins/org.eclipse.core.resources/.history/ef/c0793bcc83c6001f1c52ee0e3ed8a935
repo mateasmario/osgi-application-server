@@ -1,0 +1,6 @@
+Bundle-Name: InMemoryRepository
+Bundle-SymbolicName: com.docsbymario.inmemoryrepository
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+-runee: JavaSE-17 
+Bundle-ActivationPolicy: lazy

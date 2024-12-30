@@ -1,0 +1,5 @@
+package com.docsbymario.controller;
+
+public interface Controller {
+	public boolean hasEndpoint(String endpoint);
+}

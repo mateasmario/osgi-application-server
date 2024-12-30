@@ -1,0 +1,34 @@
+package com.docsbymario.processor;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+
+import com.docsbymario.blacklist.Blacklist;
+import com.docsbymario.inputreader.InputReader;
+import com.docsbymario.processor.exception.ForbiddenException;
+import com.docsbymario.data.request.Request;
+
+@Component(
+    property= {
+        "osgi.command.scope:String=docsbymario",
+        "osgi.command.function:String=start"
+    },
+    service=Processor.class
+)
+public class Processor {
+	@Reference
+	private InputReader inputReader;
+	@Reference
+	private Blacklist blacklist;
+	
+	public void start(BundleContext) throws ForbiddenException {
+		Request request = inputReader.read();
+		
+		if (blacklist.disallow(request)) {
+			throw new ForbiddenException("Your ip is blacklisted.");
+		}
+		
+		
+	}
+}

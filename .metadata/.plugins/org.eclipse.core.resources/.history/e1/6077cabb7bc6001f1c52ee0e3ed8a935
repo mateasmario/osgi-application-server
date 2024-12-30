@@ -1,0 +1,19 @@
+package com.docsbymario.blacklist;
+
+public class RequestInfo {
+	private String username;
+	private String password;
+	private String ipAddress;
+
+	public String getUsername() {
+		return username;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
+	public String getIpAddress() {
+		return ipAddress;
+	}
+}

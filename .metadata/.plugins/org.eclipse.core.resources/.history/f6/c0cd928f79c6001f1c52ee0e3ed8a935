@@ -1,0 +1,6 @@
+package com.docsbymario.inputreader.data;
+
+public class InputData {
+	private String endpoint;
+	private 
+}

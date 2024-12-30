@@ -1,0 +1,6 @@
+package com.docsbymario.cache;
+
+public interface Cache {
+	public String getData(String key);
+	public void putData(String key, String value);
+}

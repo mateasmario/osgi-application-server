@@ -1,0 +1,8 @@
+Bundle-Name: Homecontroller
+Bundle-SymbolicName: com.docsbymario.homecontroller
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+-runee: JavaSE-17 
+Bundle-ActivationPolicy: lazy
+-buildpath: \
+  com.docsbymario.data, com.docsbymario.controller, com.docsbymario.cache, com.docsbymario.repository

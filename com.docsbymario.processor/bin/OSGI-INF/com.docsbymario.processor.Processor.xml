@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.docsbymario.processor.Processor">
+  <property name="osgi.command.scope" type="String" value="docsbymario"/>
+  <property name="osgi.command.function" type="String" value="start"/>
+  <service>
+    <provide interface="com.docsbymario.processor.Processor"/>
+  </service>
+  <reference name="blacklist" interface="com.docsbymario.blacklist.Blacklist" field="blacklist"/>
+  <reference name="inputReader" interface="com.docsbymario.inputreader.InputReader" field="inputReader"/>
+  <implementation class="com.docsbymario.processor.Processor"/>
+</scr:component>

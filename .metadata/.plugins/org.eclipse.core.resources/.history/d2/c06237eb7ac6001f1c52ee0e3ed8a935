@@ -1,0 +1,30 @@
+package com.docsbymario.inputreader.provider;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import com.docsbymario.inputreader.InputReader;
+import com.docsbymario.inputreader.request.Request;
+
+public class StandardInputReader implements InputReader {
+
+	@Override
+	public Request read() {
+		Request request = new Request();
+		
+		InputStreamReader inputStreamReader = new InputStreamReader(System.in);
+		BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+		
+		try {
+			System.out.println("Endpoint: ");
+			request.setEndpoint(bufferedReader.readLine());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return request;
+	}
+
+}

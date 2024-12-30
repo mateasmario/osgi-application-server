@@ -1,0 +1,9 @@
+package com.docsbymario.controller;
+
+import com.docsbymario.data.request.Request;
+import com.docsbymario.data.response.Response;
+
+public interface Controller {
+	boolean hasEndpoint(String endpoint);
+	Response processEndpoint(Request request);
+}

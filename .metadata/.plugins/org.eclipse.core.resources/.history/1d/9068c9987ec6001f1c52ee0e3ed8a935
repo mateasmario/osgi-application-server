@@ -1,0 +1,5 @@
+package com.docsbymario.data.response;
+
+public class Response {
+
+}

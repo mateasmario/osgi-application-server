@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1735543200612
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Standardinputreader
+Bundle-SymbolicName: com.docsbymario.inputreader.standardinputreader
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+Created-By: 21.0.5 (Oracle Corporation)
+Import-Package: com.docsbymario.inputreader;version="[1.0,2)",com.docs
+ bymario.request,java.io,java.lang,java.net
+Private-Package: com.docsbymario.inputreader.provider
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Tool: Bnd-7.0.0.202310060912
+

@@ -1,0 +1,5 @@
+package com.docsbymario.inputreader;
+
+public interface InputReader {
+	InputData read();
+}

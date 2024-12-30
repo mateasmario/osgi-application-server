@@ -1,0 +1,3 @@
+public interface Blacklist {
+	boolean disallow(Request request);
+}

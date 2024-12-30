@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Reference"/>
+    <fullyQualifiedTypeName name="com.docsbymario.blacklist.Blacklist"/>
+    <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Component"/>
+    <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Activate"/>
+    <fullyQualifiedTypeName name="com.docsbymario.blacklist.RequestInfo"/>
+</qualifiedTypeNameHistroy>

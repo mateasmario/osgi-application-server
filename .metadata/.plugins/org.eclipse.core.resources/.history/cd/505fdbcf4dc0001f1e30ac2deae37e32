@@ -1,0 +1,5 @@
+package com.docsbymario.blacklist;
+
+public interface Blacklist {
+	boolean disallow(String username, String ipAddress);
+}

@@ -1,0 +1,9 @@
+Bundle-Name: Processor
+Bundle-SymbolicName: com.docsbymario.processor
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+-runee: JavaSE-17 
+Bundle-ActivationPolicy: lazy
+Import-Package: org.osgi.framework;version="[1.8,2.0)"
+-buildpath: \
+  com.docsbymario.blacklist, com.docsbymario.inputreader, com.docsbymario.data

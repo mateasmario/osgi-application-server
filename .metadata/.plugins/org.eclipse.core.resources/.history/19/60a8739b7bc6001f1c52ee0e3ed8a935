@@ -1,0 +1,27 @@
+package com.docsbymario.processor;
+
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+
+import com.docsbymario.blacklist.Blacklist;
+
+@Component(
+    property= {
+        "osgi.command.scope:String=docsbymario",
+        "osgi.command.function:String=start"
+    },
+    service=Processor.class
+)
+public class Processor {
+	@Reference
+	private InputReader inputReader;
+	@Reference
+	private Blacklist blacklist;
+	
+	public void start() {
+		// Wait for connection
+		// If a connection is received, check name and ipaddress by going inside the blacklist
+		// If everything is fine, check against the repository
+	}
+}

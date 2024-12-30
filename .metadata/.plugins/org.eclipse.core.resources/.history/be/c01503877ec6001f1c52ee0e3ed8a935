@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1735543094280
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Server
+Bundle-SymbolicName: com.docsbymario.server
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+Created-By: 21.0.5 (Oracle Corporation)
+Import-Package: com.docsbymario.blacklist;version="[1.0,2)",com.docsby
+ mario.inputreader;version="[1.0,2)",com.docsbymario.request;version="
+ [1.0,2)",java.lang
+Private-Package: com.docsbymario.processor,com.docsbymario.processor.e
+ xception
+Provide-Capability: osgi.service;objectClass:List<String>="com.docsbym
+ ario.processor.Processor";uses:="com.docsbymario.processor"
+Require-Capability: osgi.service;filter:="(objectClass=com.docsbymario
+ .blacklist.Blacklist)";effective:=active,osgi.service;filter:="(objec
+ tClass=com.docsbymario.inputreader.InputReader)";effective:=active,os
+ gi.extender;filter:="(&(osgi.extender=osgi.component)(version>=1.5.0)
+ (!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21)
+ )"
+Service-Component: OSGI-INF/com.docsbymario.processor.Processor.xml
+Tool: Bnd-7.0.0.202310060912
+

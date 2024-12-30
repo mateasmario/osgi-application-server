@@ -1,0 +1,9 @@
+Bundle-Name: IP-Based Blacklist Provider
+Bundle-SymbolicName: com.docsbymario.blacklist.provider
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+-runee: JavaSE-17 
+Bundle-ActivationPolicy: lazy
+-buildpath: \
+	com.docsbymario.blacklist, , com.docsbymario.inputreader

@@ -1,0 +1,24 @@
+package com.docsbymario.controller.provider;
+
+import java.util.Map;
+
+import com.docsbymario.controller.Controller;
+import com.docsbymario.data.request.Request;
+import com.docsbymario.data.response.Response;
+
+public class HomeController implements Controller {
+	private Map<String, String> endpoints;
+
+	@Override
+	public boolean hasEndpoint(String endpoint) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Response processEndpoint(Request request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.docsbymario.cache;
+
+import com.docsbymario.data.request.Request;
+
+public interface Cache {
+	public String getData(String id);
+	public void putData(String id);
+}

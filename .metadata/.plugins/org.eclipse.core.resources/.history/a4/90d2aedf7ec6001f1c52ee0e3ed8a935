@@ -1,0 +1,4 @@
+Bundle-Name: Controller
+Bundle-SymbolicName: com.docsbymario.controller
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1735546753158
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-Name: Homecontroller
+Bundle-SymbolicName: com.docsbymario.homecontroller
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+Created-By: 21.0.5 (Oracle Corporation)
+Import-Package: com.docsbymario.cache;version="[1.0,2)",com.docsbymari
+ o.controller;version="[1.0,2)",com.docsbymario.data.request;version="
+ [1.0,2)",com.docsbymario.data.response;version="[1.0,2)",com.docsbyma
+ rio.repository;version="[1.0,2)",java.lang,java.lang.invoke,java.util
+ ,java.util.function
+Private-Package: com.docsbymario.controller.provider
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Tool: Bnd-7.0.0.202310060912
+

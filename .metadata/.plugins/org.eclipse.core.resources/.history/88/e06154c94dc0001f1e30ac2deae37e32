@@ -1,0 +1,14 @@
+package com.docsbymario.blacklist.provider;
+
+import org.osgi.service.component.annotations.Component;
+
+import com.docsbymario.blacklist.Blacklist;
+
+@Component
+public class IPBasedBlacklistImpl implements Blacklist {
+	@Override
+	public boolean disallow(RequestInfo requestInfo) {
+		return !ipAddress.equals("192.168.0.1");
+	}
+
+}

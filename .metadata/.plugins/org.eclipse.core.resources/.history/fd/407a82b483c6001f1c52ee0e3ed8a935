@@ -1,0 +1,6 @@
+package com.docsbymario.repository.provider;
+
+public interface Repository {
+	String getById(String id);
+	boolean insert(String id, String value);
+}

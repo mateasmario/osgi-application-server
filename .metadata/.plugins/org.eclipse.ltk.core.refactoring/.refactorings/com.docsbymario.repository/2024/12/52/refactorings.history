@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.docsbymario.repository.TestRepository&apos; to &apos;Repository&apos;&#x0D;&#x0A;- Original project: &apos;com.docsbymario.repository&apos;&#x0D;&#x0A;- Original element: &apos;com.docsbymario.repository.TestRepository&apos;&#x0D;&#x0A;- Renamed element: &apos;com.docsbymario.repository.Repository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestRepository&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.docsbymario.repository{TestRepository.java[TestRepository" matchStrategy="1" name="Repository" qualified="false" references="true" similarDeclarations="false" stamp="1734858436309" textual="false" version="1.0"/>
+</session>
