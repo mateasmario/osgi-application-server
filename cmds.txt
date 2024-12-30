@@ -1,0 +1,2 @@
+"bundles" to view all bundles and their ids
+"stop x" to stop a bundle

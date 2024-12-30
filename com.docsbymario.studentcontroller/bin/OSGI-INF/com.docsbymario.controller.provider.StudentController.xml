@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.docsbymario.controller.provider.StudentController">
+  <service>
+    <provide interface="com.docsbymario.controller.Controller"/>
+  </service>
+  <reference name="cache" interface="com.docsbymario.cache.Cache" field="cache"/>
+  <reference name="repository" interface="com.docsbymario.repository.Repository" field="repository"/>
+  <implementation class="com.docsbymario.controller.provider.StudentController"/>
+</scr:component>

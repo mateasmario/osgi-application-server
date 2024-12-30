@@ -1,6 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1735545231999
-Bundle-ActivationPolicy: lazy
+Bnd-LastModified: 1735549952140
 Bundle-ManifestVersion: 2
 Bundle-Name: InMemoryCache 
 Bundle-SymbolicName: com.docsbymario.inmemorycache
@@ -9,8 +8,14 @@ Bundle-Version: 1.0.0.qualifier
 Created-By: 21.0.5 (Oracle Corporation)
 Export-Package: com.docsbymario.cache.provider;version="1.0.0";uses:="
  com.docsbymario.cache"
-Import-Package: com.docsbymario.cache;version="[1.0,2)",java.lang,java
- .util
-Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Import-Package: com.docsbymario.cache;version="[1.0,2)",java.io,java.l
+ ang,java.lang.invoke,java.util
+Provide-Capability: osgi.service;objectClass:List<String>="com.docsbym
+ ario.cache.Cache";uses:="com.docsbymario.cache"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=21))"
+Service-Component: OSGI-INF/com.docsbymario.cache.provider.InMemoryCac
+ he.xml
 Tool: Bnd-7.0.0.202310060912
 

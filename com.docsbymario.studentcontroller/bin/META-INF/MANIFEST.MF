@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1735546753158
+Bnd-LastModified: 1735549869442
 Bundle-ActivationPolicy: lazy
 Bundle-ManifestVersion: 2
-Bundle-Name: Homecontroller
-Bundle-SymbolicName: com.docsbymario.homecontroller
+Bundle-Name: StudentController
+Bundle-SymbolicName: com.docsbymario.studentcontroller
 Bundle-Vendor: DOCSBYMARIO
 Bundle-Version: 1.0.0.qualifier
 Created-By: 21.0.5 (Oracle Corporation)
@@ -13,6 +13,14 @@ Import-Package: com.docsbymario.cache;version="[1.0,2)",com.docsbymari
  rio.repository;version="[1.0,2)",java.lang,java.lang.invoke,java.util
  ,java.util.function
 Private-Package: com.docsbymario.controller.provider
-Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Provide-Capability: osgi.service;objectClass:List<String>="com.docsbym
+ ario.controller.Controller";uses:="com.docsbymario.controller"
+Require-Capability: osgi.service;filter:="(objectClass=com.docsbymario
+ .cache.Cache)";effective:=active,osgi.service;filter:="(objectClass=c
+ om.docsbymario.repository.Repository)";effective:=active,osgi.extende
+ r;filter:="(&(osgi.extender=osgi.component)(version>=1.5.0)(!(version
+ >=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Service-Component: OSGI-INF/com.docsbymario.controller.provider.Studen
+ tController.xml
 Tool: Bnd-7.0.0.202310060912
 

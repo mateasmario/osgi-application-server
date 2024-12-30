@@ -1,8 +1,0 @@
-package com.docsbymario.blacklist.provider;
-
-import org.osgi.service.component.annotations.Component;
-
-@Component
-public class IPBasedBlacklistImpl implements Blacklist {
-
-}

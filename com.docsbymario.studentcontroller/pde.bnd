@@ -1,5 +1,5 @@
-Bundle-Name: Homecontroller
-Bundle-SymbolicName: com.docsbymario.homecontroller
+Bundle-Name: StudentController
+Bundle-SymbolicName: com.docsbymario.studentcontroller
 Bundle-Vendor: DOCSBYMARIO
 Bundle-Version: 1.0.0.qualifier
 -runee: JavaSE-17 

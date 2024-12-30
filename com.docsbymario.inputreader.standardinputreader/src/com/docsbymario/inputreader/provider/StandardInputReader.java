@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.InetAddress;
 
+import org.osgi.service.component.annotations.Component;
+
 import com.docsbymario.data.request.Authentication;
 import com.docsbymario.data.request.Request;
 import com.docsbymario.data.request.RequestBody;
 import com.docsbymario.inputreader.InputReader;
 
+@Component
 public class StandardInputReader implements InputReader {
 
 	@Override

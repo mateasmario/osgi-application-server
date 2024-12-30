@@ -9,7 +9,7 @@ import com.docsbymario.data.request.Request;
 public class IPBlacklist implements Blacklist {
 	@Override
 	public boolean disallow(Request requestInfo) {
-		return !requestInfo.getIpAddress().equals("192.168.0.1");
+		return requestInfo.getIpAddress().equals("192.136.0.1");
 	}
 
 }

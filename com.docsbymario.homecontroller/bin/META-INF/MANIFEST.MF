@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1735546766503
+Bnd-LastModified: 1735547381905
 Bundle-ActivationPolicy: lazy
 Bundle-ManifestVersion: 2
 Bundle-Name: Homecontroller
@@ -12,6 +12,12 @@ Import-Package: com.docsbymario.controller;version="[1.0,2)",com.docsb
  ersion="[1.0,2)",java.lang,java.lang.invoke,java.util,java.util.funct
  ion
 Private-Package: com.docsbymario.controller.provider
-Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=21))"
+Provide-Capability: osgi.service;objectClass:List<String>="com.docsbym
+ ario.controller.Controller";uses:="com.docsbymario.controller"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.5.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=21))"
+Service-Component: OSGI-INF/com.docsbymario.controller.provider.HomeCo
+ ntroller.xml
 Tool: Bnd-7.0.0.202310060912
 

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1735545082388
+Bnd-LastModified: 1735548822985
 Bundle-ActivationPolicy: lazy
 Bundle-ManifestVersion: 2
 Bundle-Name: IP-Based Blacklist Provider

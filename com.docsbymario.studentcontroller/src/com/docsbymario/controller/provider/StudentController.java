@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 import com.docsbymario.cache.Cache;
@@ -12,6 +13,7 @@ import com.docsbymario.data.request.Request;
 import com.docsbymario.data.response.Response;
 import com.docsbymario.repository.Repository;
 
+@Component
 public class StudentController implements Controller {
 	@Reference
 	private Cache cache;
@@ -44,15 +46,17 @@ public class StudentController implements Controller {
 		}
 	}
 	
-	public Response getStudent(Request request) {
+	public Response getStudent(Request request) {		
 		Response response = new Response();
 		String id = request.getBody().getContent();
 		
 		String data = cache.getData(id);
-		
+				
 		if (data == null) {
 			data = repository.getById(id);
-			cache.putData(id, data);
+			if (data != null) {
+				cache.putData(id, data);
+			}
 		}
 		
 		response.setStatusCode(data == null ? 404 : 200);

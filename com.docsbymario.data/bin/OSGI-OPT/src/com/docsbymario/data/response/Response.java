@@ -21,6 +21,7 @@ public class Response {
 		return new StringBuilder()
 				.append("Status Code: ")
 				.append(statusCode)
+				.append("\n")
 				.append("Body: ")
 				.append(body).toString();
 	}

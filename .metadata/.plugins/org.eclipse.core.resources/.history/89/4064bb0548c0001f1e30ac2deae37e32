@@ -1,5 +1,0 @@
-Bundle-Name: Blacklist
-Bundle-SymbolicName: com.docsbymario.blacklist
-Bundle-Vendor: DOCSBYMARIO
-Bundle-Version: 1.0.0.qualifier
-Bundle-RequiredExecutionEnvironment: JavaSE-17

@@ -1,0 +1,7 @@
+Bundle-Name: NoCache 
+Bundle-SymbolicName: com.docsbymario.nocache
+Bundle-Vendor: DOCSBYMARIO
+Bundle-Version: 1.0.0.qualifier
+-runee: JavaSE-17 
+-buildpath: \
+	com.docsbymario.cache

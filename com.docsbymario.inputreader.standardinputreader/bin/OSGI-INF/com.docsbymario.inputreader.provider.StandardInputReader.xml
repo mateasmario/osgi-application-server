@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.docsbymario.inputreader.provider.StandardInputReader">
+  <service>
+    <provide interface="com.docsbymario.inputreader.InputReader"/>
+  </service>
+  <implementation class="com.docsbymario.inputreader.provider.StandardInputReader"/>
+</scr:component>

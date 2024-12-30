@@ -26,7 +26,14 @@ public class Processor {
 	@Reference
 	private Blacklist blacklist;
 	
-	public void start(BundleContext context) throws ForbiddenException, InvalidSyntaxException {
+	private BundleContext context;
+	
+	@Activate
+	public void activate(BundleContext context) {
+		this.context = context;
+	}
+	
+	public void start() throws ForbiddenException, InvalidSyntaxException {
 		Request request = inputReader.read();
 		
 		if (blacklist.disallow(request)) {
@@ -39,9 +46,11 @@ public class Processor {
                 Controller controller = (Controller) context.getService(ref);
                 if (controller != null && controller.canReceive(request)) {
                     System.out.println(controller.process(request));
+                    return;
                 }
             }
         }
-		
+        
+        System.out.println("Endpoint not found. Could not handle your request.");
 	}
 }

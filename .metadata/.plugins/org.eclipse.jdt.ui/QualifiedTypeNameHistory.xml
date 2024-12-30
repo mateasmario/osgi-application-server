@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Reference"/>
     <fullyQualifiedTypeName name="com.docsbymario.blacklist.Blacklist"/>
+    <fullyQualifiedTypeName name="com.docsbymario.blacklist.RequestInfo"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.InputData"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.data.Request"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.data.RequestBody"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.data.Authentication"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.request.RequestBody"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.InputReader"/>
+    <fullyQualifiedTypeName name="com.docsbymario.inputreader.request.Request"/>
+    <fullyQualifiedTypeName name="java.net.Authenticator.RequestorType"/>
+    <fullyQualifiedTypeName name="com.docsbymario.request.Request"/>
+    <fullyQualifiedTypeName name="com.docsbymario.processor.exception.ForbiddenException"/>
+    <fullyQualifiedTypeName name="com.docsbymario.data.response.Response"/>
+    <fullyQualifiedTypeName name="com.docsbymario.data.request.Request"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Reference"/>
+    <fullyQualifiedTypeName name="com.docsbymario.cache.Cache"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="javax.sql.rowset.CachedRowSet"/>
+    <fullyQualifiedTypeName name="com.docsbymario.repository.Repository"/>
+    <fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
+    <fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
+    <fullyQualifiedTypeName name="java.lang.ModuleLayer.Controller"/>
+    <fullyQualifiedTypeName name="com.docsbymario.controller.Controller"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Component"/>
     <fullyQualifiedTypeName name="org.osgi.service.component.annotations.Activate"/>
-    <fullyQualifiedTypeName name="com.docsbymario.blacklist.RequestInfo"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

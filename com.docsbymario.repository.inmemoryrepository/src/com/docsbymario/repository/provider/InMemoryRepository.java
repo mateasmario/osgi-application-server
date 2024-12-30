@@ -3,8 +3,11 @@ package com.docsbymario.repository.provider;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.osgi.service.component.annotations.Component;
+
 import com.docsbymario.repository.Repository;
 
+@Component
 public class InMemoryRepository implements Repository {
 	private Map<String, String> items = new HashMap<>();
 	

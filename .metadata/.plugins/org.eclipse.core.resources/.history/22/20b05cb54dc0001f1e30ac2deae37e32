@@ -1,7 +1,0 @@
-package com.docsbymario.blacklist;
-
-public class RequestInfo {
-	private String username;
-	private String password;
-	private String ipAddress;
-}

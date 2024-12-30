@@ -4,10 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+import org.osgi.service.component.annotations.Component;
+
 import com.docsbymario.controller.Controller;
 import com.docsbymario.data.request.Request;
 import com.docsbymario.data.response.Response;
 
+@Component
 public class HomeController implements Controller {
 	private Map<String, Function<Request, Response>> endpoints = new HashMap<>();
 	

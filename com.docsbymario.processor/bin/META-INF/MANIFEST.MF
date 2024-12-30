@@ -1,17 +1,21 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1735546772947
-Bundle-ActivationPolicy: lazy
+Bnd-LastModified: 1735549004508
 Bundle-ManifestVersion: 2
 Bundle-Name: Processor
 Bundle-SymbolicName: com.docsbymario.processor
 Bundle-Vendor: DOCSBYMARIO
 Bundle-Version: 1.0.0.qualifier
 Created-By: 21.0.5 (Oracle Corporation)
-Import-Package: org.osgi.framework
+Import-Package: com.docsbymario.blacklist;version="[1.0,2)",com.docsby
+ mario.controller;version="[1.0,2)",com.docsbymario.data.request;versi
+ on="[1.0,2)",com.docsbymario.data.response;version="[1.0,2)",com.docs
+ bymario.inputreader;version="[1.0,2)",java.io,java.lang,org.osgi.fram
+ ework
 Private-Package: com.docsbymario.processor,com.docsbymario.processor.e
  xception
 Provide-Capability: osgi.service;objectClass:List<String>="com.docsbym
  ario.processor.Processor";uses:="com.docsbymario.processor"
+Require-Bundle: org.eclipse.osgi
 Require-Capability: osgi.service;filter:="(objectClass=com.docsbymario
  .blacklist.Blacklist)";effective:=active,osgi.service;filter:="(objec
  tClass=com.docsbymario.inputreader.InputReader)";effective:=active,os

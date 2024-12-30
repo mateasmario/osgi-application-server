@@ -1,5 +1,0 @@
-package com.docsbymario.blacklist.provider;
-
-public class IPBasedBlacklistProvider {
-
-}

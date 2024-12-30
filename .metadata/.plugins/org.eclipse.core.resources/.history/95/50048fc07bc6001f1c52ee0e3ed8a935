@@ -1,5 +1,0 @@
-package com.docsbymario.blacklist;
-
-public interface Blacklist {
-	boolean disallow(RequestInfo requestInfo);
-}
